@@ -31,7 +31,7 @@
 # the build configuration options are initialized.                                 #
 ####################################################################################
 
-cmake_minimum_required (VERSION 3.0)
+cmake_minimum_required (VERSION 3.20)
 
 project ("rttr" LANGUAGES CXX)
 
@@ -75,9 +75,9 @@ endif()
 include(config)
 include(3rd_party_libs)
 
-if (BUILD_PACKAGE)
-    include(installer)
-endif()
+# if (BUILD_PACKAGE)
+#     include(installer)
+# endif()
 
 # here we add our source code
 add_subdirectory(src)
